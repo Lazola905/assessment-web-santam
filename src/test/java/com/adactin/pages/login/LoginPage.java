@@ -1,7 +1,7 @@
 package com.adactin.pages.login;
 
 import com.adactin.pages.BasePage;
-import com.adactin.pages.search.SearchPage;
+import com.adactin.pages.search.SearchHotelsPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,8 +24,8 @@ public class LoginPage extends BasePage {
         passwordInput.sendKeys(password);
     }
 
-    public SearchPage clickLoginButton() {
+    public SearchHotelsPage clickLoginButton() {
         loginButton.click();
-        return new SearchPage(driver);
+        return new SearchHotelsPage(driver);
     }
 }
